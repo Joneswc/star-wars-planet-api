@@ -1,6 +1,6 @@
 package br.edu.b2w.jones.planet.starwars.starwarsplanetapi.entity;
 
-public class Result {
+public class Results {
 
     private String title;
     private String episode_id;
