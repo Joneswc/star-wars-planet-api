@@ -3,6 +3,8 @@ package br.edu.b2w.jones.planet.starwars.starwarsplanetapi.controller;
 import br.edu.b2w.jones.planet.starwars.starwarsplanetapi.entity.Planet;
 import br.edu.b2w.jones.planet.starwars.starwarsplanetapi.repository.PlanetRepository;
 import br.edu.b2w.jones.planet.starwars.starwarsplanetapi.service.SequenceGeneratorService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -25,15 +27,29 @@ public class PlanetController {
         return repository.save(planet);
     }
 
-    @GetMapping("/findname")
+    @GetMapping("/findname/{name}")
     public Planet findByName (String name) {
         return repository.findByNome(name);
     }
 
-    @GetMapping("/findid")
+    @GetMapping("/findid/{id}")
     public Planet findById (String id) {
         Optional<Planet> planet = repository.findById(id);
         return planet.get();
+    }
+
+    @GetMapping("deleteid/{id}")
+    public ResponseEntity<String> deletePlanetById (@PathVariable String id ) {
+        Planet planet = findById(id);
+         repository.delete(planet);
+         return new ResponseEntity<String>("planet successfully deleted", HttpStatus.OK);
+    }
+
+    @GetMapping("deletename/{name}")
+    public ResponseEntity<String> deletePlanetByName (@PathVariable String name ) {
+        Planet planet = findByName(name);
+        repository.delete(planet);
+        return new ResponseEntity<String>("planet successfully deleted", HttpStatus.OK);
     }
 
 }
