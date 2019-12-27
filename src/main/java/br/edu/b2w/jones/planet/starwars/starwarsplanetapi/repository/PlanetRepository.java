@@ -5,9 +5,9 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;
 
-public interface PlanetRepository extends MongoRepository<Planet, Long> {
+public interface PlanetRepository extends MongoRepository<Planet, String> {
 
     public Planet findByNome(String nome);
-    public Optional<Planet> findById(Long id);
+    public Optional<Planet> findById(String id);
 
 }
