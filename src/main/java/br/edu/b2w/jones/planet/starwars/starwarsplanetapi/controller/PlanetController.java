@@ -28,12 +28,12 @@ public class PlanetController {
     }
 
     @GetMapping("/findname/{name}")
-    public Planet findByName (String name) {
+    public Planet findByName (@PathVariable String name) {
         return repository.findByNome(name);
     }
 
     @GetMapping("/findid/{id}")
-    public Planet findById (String id) {
+    public Planet findById (@PathVariable String id) {
         Optional<Planet> planet = repository.findById(id);
         return planet.get();
     }
