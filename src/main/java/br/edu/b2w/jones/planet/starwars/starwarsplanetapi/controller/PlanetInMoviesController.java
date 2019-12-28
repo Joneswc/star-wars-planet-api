@@ -30,7 +30,7 @@ public class PlanetInMoviesController {
     @GetMapping("/appearances/{planet}")
     public ResponseEntity<String> amountTimesInMovies (@PathVariable String planet) throws IOException {
         Integer amount = service.getAmount(planet);
-        return new ResponseEntity<String>(amount.toString(), HttpStatus.OK);
+        return new ResponseEntity<String>("{ \"quantidade\": " + amount.toString() +"}", HttpStatus.OK);
     }
 
 }
