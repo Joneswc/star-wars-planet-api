@@ -2,107 +2,107 @@ package br.edu.b2w.jones.planet.starwars.starwarsplanetapi.entity;
 
 public class Results {
 
-    private String title;
-    private String episode_id;
-    private String opening_crawl;
-    private String director;
-    private String producer;
-    private String release_date;
-    private String characters[];
-    private String planets[];
-    private String starships[];
-    private String vehicles[];
-    private String species[];
+    private String name;
+    private String rotation_period;
+    private String orbital_period;
+    private String diameter;
+    private String climate;
+    private String gravity;
+    private String terrain;
+    private String surface_water;
+    private String population;
+    private String residents[];
+    private String films[];
     private String created;
     private String edited;
     private String url;
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getEpisode_id() {
-        return episode_id;
+    public String getRotation_period() {
+        return rotation_period;
     }
 
-    public void setEpisode_id(String episode_id) {
-        this.episode_id = episode_id;
+    public void setRotation_period(String rotation_period) {
+        this.rotation_period = rotation_period;
     }
 
-    public String getOpening_crawl() {
-        return opening_crawl;
+    public String getOrbital_period() {
+        return orbital_period;
     }
 
-    public void setOpening_crawl(String opening_crawl) {
-        this.opening_crawl = opening_crawl;
+    public void setOrbital_period(String orbital_period) {
+        this.orbital_period = orbital_period;
     }
 
-    public String getDirector() {
-        return director;
+    public String getDiameter() {
+        return diameter;
     }
 
-    public void setDirector(String director) {
-        this.director = director;
+    public void setDiameter(String diameter) {
+        this.diameter = diameter;
     }
 
-    public String getProducer() {
-        return producer;
+    public String getClimate() {
+        return climate;
     }
 
-    public void setProducer(String producer) {
-        this.producer = producer;
+    public void setClimate(String climate) {
+        this.climate = climate;
     }
 
-    public String getRelease_date() {
-        return release_date;
+    public String getGravity() {
+        return gravity;
     }
 
-    public void setRelease_date(String release_date) {
-        this.release_date = release_date;
+    public void setGravity(String gravity) {
+        this.gravity = gravity;
     }
 
-    public String[] getCharacters() {
-        return characters;
+    public String getTerrain() {
+        return terrain;
     }
 
-    public void setCharacters(String[] characters) {
-        this.characters = characters;
+    public void setTerrain(String terrain) {
+        this.terrain = terrain;
     }
 
-    public String[] getPlanets() {
-        return planets;
+    public String getSurface_water() {
+        return surface_water;
     }
 
-    public void setPlanets(String[] planets) {
-        this.planets = planets;
+    public void setSurface_water(String surface_water) {
+        this.surface_water = surface_water;
     }
 
-    public String[] getStarships() {
-        return starships;
+    public String getPopulation() {
+        return population;
     }
 
-    public void setStarships(String[] starships) {
-        this.starships = starships;
+    public void setPopulation(String population) {
+        this.population = population;
     }
 
-    public String[] getVehicles() {
-        return vehicles;
+    public String[] getResidents() {
+        return residents;
     }
 
-    public void setVehicles(String[] vehicles) {
-        this.vehicles = vehicles;
+    public void setResidents(String[] residents) {
+        this.residents = residents;
     }
 
-    public String[] getSpecies() {
-        return species;
+    public String[] getFilms() {
+        return films;
     }
 
-    public void setSpecies(String[] species) {
-        this.species = species;
+    public void setFilms(String[] films) {
+        this.films = films;
     }
 
     public String getCreated() {
@@ -128,4 +128,5 @@ public class Results {
     public void setUrl(String url) {
         this.url = url;
     }
+
 }
