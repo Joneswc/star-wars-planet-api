@@ -1,0 +1,226 @@
+{
+	"id": "092b45b2-56b0-e4bd-1845-a1307695bfc7",
+	"name": "Star-Wars Planets",
+	"description": "Test para a API de gestão de planetas Star-Wars",
+	"order": [
+		"c22d80aa-ebee-fc36-d516-bf53cf0edbc6",
+		"6ef4d513-84a3-3aef-6f7c-d70dfc74bf5e",
+		"5f7b2028-07ff-9452-385d-5584a7ed3f81",
+		"1a678682-377a-0ad5-5934-07442129f4fe",
+		"dfddc30b-9c5f-2eaf-c87a-d131ece575e3",
+		"b9367194-e2d0-eef2-d9e5-98c577d3ed9b",
+		"7ab3ca7c-9d9d-20c0-2458-adcf24828a55"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1577492246580,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1a678682-377a-0ad5-5934-07442129f4fe",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/starwars/planet/deleteid/{id}",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "092b45b2-56b0-e4bd-1845-a1307695bfc7",
+			"data": null,
+			"dataMode": "params",
+			"name": "Deletar planeta por id",
+			"description": "Como no caso anterior, insira o id",
+			"descriptionFormat": "html",
+			"time": 1577492675779,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "5f7b2028-07ff-9452-385d-5584a7ed3f81",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/starwars/planet/findid/{id}",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "092b45b2-56b0-e4bd-1845-a1307695bfc7",
+			"data": null,
+			"dataMode": "params",
+			"name": "Buscar planeta por id",
+			"description": "infelizmente, este teste só poderá ser feito quando soubermos o id do planeta inserido, já que este será gerado automaticamente. Na resposta do teste de adicionar planeta, mostrará o id.",
+			"descriptionFormat": "html",
+			"time": 1577492515941,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6ef4d513-84a3-3aef-6f7c-d70dfc74bf5e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/starwars/planet/findname/Utapau",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "092b45b2-56b0-e4bd-1845-a1307695bfc7",
+			"data": null,
+			"dataMode": "params",
+			"name": "Procurar planeta por nome",
+			"description": "Procurar no MongoDB, planetas por nome. No caso, vamos procurar o planeta Utapau, inserido no teste de inserção",
+			"descriptionFormat": "html",
+			"time": 1577492395276,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "7ab3ca7c-9d9d-20c0-2458-adcf24828a55",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/starwars/movies/appearances/Utapau",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "092b45b2-56b0-e4bd-1845-a1307695bfc7",
+			"data": null,
+			"dataMode": "params",
+			"name": "Em quantos filmes um planeta aparece, agora com paginação?",
+			"description": "Este é o mesmo teste anterior, de em quantos filmes um planeta aparece. Mas a url da API de star-wars traz esses dados paginados, então, desta vez, testamos a inteligencia do endpoint trabalhar com paginação.",
+			"descriptionFormat": "html",
+			"time": 1577493072048,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b9367194-e2d0-eef2-d9e5-98c577d3ed9b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/starwars/movies/appearances/Alderaan",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1577492949509,
+			"name": "Em quantos filmes um planeta aparece?",
+			"description": "Este teste trás em quantos filmes um planeta aparece. No caso testaremos o planeta Alderaan. Em quantos filmes será que ele aparece?",
+			"collectionId": "092b45b2-56b0-e4bd-1845-a1307695bfc7",
+			"responses": []
+		},
+		{
+			"id": "c22d80aa-ebee-fc36-d516-bf53cf0edbc6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/starwars/planet/addplanet",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1577492634493,
+			"name": "Adicionar planeta",
+			"description": "Planeta adicionado: Utapau\nAtenção no Response, pois terá o campo id preenchido. Guarde o valor deste campo para os testes posteriores, já que o id será gerado automaticamente",
+			"collectionId": "092b45b2-56b0-e4bd-1845-a1307695bfc7",
+			"responses": [],
+			"rawModeData": "{\n  \"nome\": \"Utapau\",\n  \"clima\": \"temperate, arid, windy\",\n  \"terreno\": \"scrublands, savanna, canyons, sinkholes\"\n}"
+		},
+		{
+			"id": "dfddc30b-9c5f-2eaf-c87a-d131ece575e3",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8080/starwars/planet/deletename/Utapau",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1577492829140,
+			"name": "Deletar por nome",
+			"description": "Achou que não ia te ajudar no delete, né?!\nVai lá, cara, é só colocar o nome do planeta que você quer deletar.\nJá te ajudei um pouco, o que completei na url, é o planeta inserido no teste de adicionar planeta",
+			"collectionId": "092b45b2-56b0-e4bd-1845-a1307695bfc7",
+			"responses": []
+		}
+	]
+}
